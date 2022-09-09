@@ -137,7 +137,7 @@ $(document).ready(function() {
 
     $('#enviar').click(function() {
         
-        var identificador = 'contato-novo-varejo';
+        var identificador = '/solucao-novo-varejo';
         var nome = $("input[name='nome']" );
         var sobrenome = $("input[name='sobrenome']" );
         var email = $("input[name='email']" );

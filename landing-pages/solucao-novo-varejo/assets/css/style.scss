@@ -620,7 +620,8 @@ b {
 		li {
 			display: grid;
 			grid-template-columns: 25% 75%;
-
+			align-items: center;
+			
 			p {
 				font-family: "praktika";
 				font-size: 20px;
