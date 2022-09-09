@@ -1,0 +1,105 @@
+.payments {
+    padding-block: var(--spacing);
+    background-color: var(--amarelo);
+
+    &__container {
+        display: grid;
+
+        h2 {
+            margin-bottom: 2rem;
+            line-height: 1.3;
+            font-size: 2.25rem;
+
+            span {
+                background-image: url("../images/title_bg.svg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: var(--white);
+                padding: 0.25rem 1rem;
+                font-weight: 600;
+                margin-left: -1rem;
+            }
+        }
+
+        h3 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (min-width: 45em) {
+        padding-block: 3rem;
+        overflow: hidden;
+
+        &__container {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 6rem;
+
+            .content {
+                grid-column: 2/3;
+            }
+
+            position: relative;
+
+            .image {
+                position: absolute;
+                left: 0;
+                max-width: 48%;
+                transform: scale(1.25);
+                margin-bottom: -3rem;
+            }
+        }
+    }
+}
+
+.payments--list {
+    padding-block: var(--spacing);
+
+    &__container {
+        ul {
+            margin-bottom: 3rem;
+            display: grid;
+            gap: 2rem;
+
+            @media (min-width: 45em) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: 70em) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            li {
+                display: grid;
+                text-align: center;
+                grid-template-rows: 5rem min-content;
+
+                img {
+                    margin-inline: auto;
+                    margin-bottom: 1.25rem;
+                }
+
+                h6 {
+                    font-size: 1.345rem;
+                    line-height: 1.2;
+                    text-align: center;
+                    font-weight: 700;
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    max-width: 25ch;
+                    margin-inline: auto;
+                }
+            }
+        }
+
+        a {
+            margin-inline: auto;
+            display: grid;
+            max-width: 17rem;
+        }
+    }
+}

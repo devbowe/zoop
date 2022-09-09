@@ -1,0 +1,26 @@
+.clients {
+    padding-block: var(--spacing);
+
+    &__container {
+        text-align: center;
+
+        h2 {
+            margin-bottom: 1.25rem;
+            font-weight: 600;
+            line-height: 1.2;
+            font-size: 1.75rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            max-width: 47ch;
+            margin-inline: auto;
+            // margin-bottom: 2rem;
+        }
+    }
+}
+
+.brands {
+    margin-inline: auto;
+    margin-top: 2rem;
+}

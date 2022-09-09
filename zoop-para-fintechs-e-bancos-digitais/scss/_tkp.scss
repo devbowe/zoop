@@ -1,0 +1,73 @@
+.tkp {
+    background-color: var(--amarelo);
+    min-height: 100vh;
+    padding-block: var(--spacing);
+    display: grid;
+    position: relative;
+    overflow: hidden;
+
+    @media (min-width: 45em) {
+        background-image: url("../images/tkp__bg.png");
+        background-size: 60%;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-position-x: 150%;
+        background-position-y: 120%;
+    }
+
+    @media (min-width: 70em) {
+        background-position-x: 120%;
+        background-size: 50vw;
+        background-position-y: center;
+    }
+
+    @media (min-width: 2000px) {
+        background-position-y: 10%;
+    }
+
+    &__container {
+        img {
+            margin-bottom: var(--spacing);
+        }
+
+        h1 {
+            color: var(--roxo);
+            font-size: clamp(4rem, 3vw, 6rem);
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            max-width: 50ch;
+
+            strong {
+                font-weight: 600;
+            }
+        }
+
+        p + p {
+            margin-top: 1rem;
+        }
+
+        a {
+            margin-top: 2rem;
+        }
+    }
+
+    .banner {
+        display: none;
+
+        @media (min-width: 45em) {
+            display: unset;
+            position: absolute;
+            bottom: -25vw;
+            right: -50vw;
+        }
+
+        @media (min-width: 70em) {
+            max-width: 1100px;
+            bottom: -15vw;
+            right: -40vw;
+        }
+    }
+}

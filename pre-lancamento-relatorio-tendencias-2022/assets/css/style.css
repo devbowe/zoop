@@ -1,0 +1,596 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vqPQw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'praktika';
+  src: url("../fonts/praktikarounded-regular-webfont.woff2") format("woff2"), url("../fonts/praktikarounded-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'praktika';
+  src: url("../fonts/praktikarounded-light-webfont.woff2") format("woff2"), url("../fonts/praktikarounded-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'praktika';
+  src: url("../fonts/praktikarounded-bold-webfont.woff2") format("woff2"), url("../fonts/praktikarounded-bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'praktika';
+  src: url("../fonts/praktikarounded-extrabold-webfont.woff2") format("woff2"), url("../fonts/praktikarounded-extrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PraktikaRounded-Bold";
+  src: url("../fonts/Praktika-Rnd-Bold.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PraktikaRounded-Medium";
+  src: url("../fonts/Praktika-Rnd-Medium.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PraktikaRounded-MediumItalic";
+  src: url("../fonts/Praktika-Rnd-Medium-Ita.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PraktikaRounded-BoldItalic";
+  src: url("../fonts/Praktika-Rnd-Bold-Italic.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PraktikaRounded-ExtraItalic";
+  src: url("../fonts/Praktika-Rnd-Ext-Ita.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PraktikaRounded-ExtraItalic-Bold";
+  src: url("../fonts/Praktika-Rnd-Bold-Ext-Ita.otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PraktikaRounded-ExtraItalic-Medium";
+  src: url("../fonts/Praktika-Rnd-Medium-Ext-Ita.otf");
+  font-display: swap;
+}
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: praktika;
+}
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: praktika;
+}
+h1 {
+  font-family: 'PraktikaRounded-ExtraItalic-Bold';
+  margin: 0;
+}
+h2 {
+  font-family: 'PraktikaRounded-MediumItalic';
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+h5 {
+  margin: 0;
+}
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+}
+span {
+  margin: 0;
+}
+a {
+  margin: 0;
+}
+.container {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+.btn-border-white {
+  font-family: 'PraktikaRounded-MediumItalic';
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 14px 30px;
+  border: solid 2px #ffffff;
+  text-decoration: none;
+  display: inline-grid;
+}
+.btn-orange {
+  font-family: PraktikaRounded-ExtraItalic-Bold;
+  max-width: 340px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 2px #FF7300;
+  background: #FF7300;
+  text-decoration: none;
+  display: block;
+}
+.btn-orange:hover {
+  opacity: 0.6;
+}
+.image {
+  display: block;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+header {
+  background: #0F0F0F;
+}
+header .line {
+  background: linear-gradient(90deg, #ff7300 0%, #ff0064 30.21%, #ffa500 60.42%, #7300ff 100%);
+  height: 10px;
+}
+header img {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+#section01 {
+  background: url(../images/section01.webp) no-repeat;
+  padding: 80px 0 40px;
+}
+#section01 h1,
+#section01 h2,
+#section01 p {
+  color: #F2F2F2;
+}
+#section01 h1 {
+  font-size: 70px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+#section01 h2 {
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+#section01 p {
+  text-align: center;
+}
+#section01 .btn-orange {
+  margin: 30px auto 60px;
+}
+@media screen and (min-width: 1025px) {
+  #section01 p {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+#section02 {
+  background: #0F0F0F;
+  padding: 60px 0;
+}
+#section02 .row .col {
+  margin-right: 20px;
+}
+#section02 .row .col:last-child {
+  margin-right: 0;
+}
+#section02 .row .col .itens {
+  position: relative;
+  bottom: 20%;
+}
+#section02 .row .col .itens h2 {
+  font-family: 'praktika';
+  font-size: 85px;
+  text-align: center;
+  color: #0F0F0F;
+  letter-spacing: -0.02em;
+  background: #0F0F0F;
+  width: 20%;
+  padding: 10px;
+}
+#section02 .row .col .itens p {
+  font-family: 'PraktikaRounded-MediumItalic';
+  font-size: 20px;
+  line-height: 28px;
+}
+#section02 .row .orange .itens h2 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FF7300;
+}
+#section02 .row .orange .itens p {
+  color: #FF7300;
+}
+#section02 .row .orange .images {
+  background: url("../images/img01.png") no-repeat;
+  height: 177px;
+  width: 278px;
+}
+#section02 .row .orange .images:hover {
+  background: url("../images/img02.png") no-repeat;
+}
+#section02 .row .pink .itens h2 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FF0064;
+}
+#section02 .row .pink .itens p {
+  color: #FF0064;
+}
+#section02 .row .pink .images {
+  background: url("../images/img01v2.png") no-repeat;
+  height: 177px;
+  width: 278px;
+}
+#section02 .row .pink .images:hover {
+  background: url("../images/img03.png") no-repeat;
+}
+#section02 .row .yellow .itens h2 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFA500;
+}
+#section02 .row .yellow .itens p {
+  color: #FFA500;
+}
+#section02 .row .yellow .images {
+  background: url("../images/img01v3.png") no-repeat;
+  height: 177px;
+  width: 278px;
+}
+#section02 .row .yellow .images:hover {
+  background: url("../images/img04.png") no-repeat;
+}
+#section02 .row .purple .itens h2 {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #7300FF;
+}
+#section02 .row .purple .itens p {
+  color: #7300FF;
+}
+#section02 .row .purple .images {
+  background: url("../images/img01v4.png") no-repeat;
+  height: 177px;
+  width: 278px;
+}
+#section02 .row .purple .images:hover {
+  background: url("../images/img05.png") no-repeat;
+}
+#section02 .carousel {
+  display: none;
+}
+#section03 {
+  background: #0F0F0F;
+}
+#section03 .container {
+  border-top: 1px solid rgba(205, 205, 205, 0.2);
+}
+#section03 fieldset {
+  border: none;
+  padding: 60px 0;
+}
+#section03 fieldset .intro,
+#section03 fieldset .form {
+  width: 40%;
+}
+#section03 fieldset .form form button {
+  width: 50%;
+  height: 50px;
+  margin-top: 25px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  font-family: PraktikaRounded-ExtraItalic-Bold;
+  display: block;
+}
+#section03 fieldset .form form button:hover {
+  opacity: 0.6;
+}
+#section03 .second-step {
+  display: none;
+}
+#section03 .second-step .row .col img {
+  padding-right: 60px;
+}
+#section03 h2 {
+  font-size: 35px;
+}
+#section03 h2,
+#section03 p {
+  color: #F2F2F2;
+}
+#section03 p {
+  padding-top: 15px;
+}
+footer {
+  background: #0F0F0F;
+  border-top: 1px solid rgba(205, 205, 205, 0.2);
+  padding: 50px 0;
+}
+footer a {
+  margin-right: 30px;
+}
+footer a:last-child {
+  margin-right: 0;
+}
+input::placeholder {
+  padding: 0 10px;
+}
+select {
+  color: #8c8c8c;
+  height: 52px;
+}
+select::placeholder {
+  padding: 0 10px;
+}
+input[type=text],
+input[type=email],
+select {
+  background-color: #0F0F0F;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+  margin: 0 15px 15px 0;
+  padding: 10px 5px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+}
+input[type=text] {
+  color: #8c8c8c;
+  height: 30px;
+}
+input[type=email] {
+  color: #8c8c8c;
+  height: 30px;
+}
+.modalvideo {
+  background: #ff7d00;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+}
+.modalvideo iframe {
+  margin: 0 auto;
+}
+.modalvideo .close {
+  color: #fff;
+  background: #9f4900;
+  border-radius: 100px;
+  border: none;
+  right: 30px;
+  top: 30px;
+  font-family: praktika;
+  font-size: 30px;
+  font-weight: 800;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.modalvideo .videointerno {
+  object-fit: cover;
+  background-size: cover;
+  opacity: 1;
+  width: 88%;
+  height: 90vh;
+  display: block;
+  margin: 0 auto;
+}
+.d-sm-none,
+.d-none {
+  display: block;
+}
+.d-md-block {
+  display: none;
+}
+.d-md-flex {
+  display: flex;
+}
+.desk {
+  display: flex;
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .container {
+    max-width: 90%;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+  html {
+    zoom: 0.8;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  img {
+    max-width: 100%;
+  }
+  #section01 {
+    padding: 60px 0 40px;
+  }
+  #section01 h1 {
+    font-size: 60px;
+  }
+  #section02 {
+    padding: 60px 0 0;
+  }
+  #section02 .row .col .itens p br {
+    display: none;
+  }
+  #section03 fieldset .intro,
+  #section03 fieldset .form {
+    width: 60%;
+  }
+  #section03 fieldset .form form {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none;
+  }
+  .d-md-flex {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+}
+@media screen and (max-width: 766px) {
+  #section01 h1 {
+    font-size: 35px;
+  }
+  #section01 h2 {
+    font-size: 25px;
+    margin: 30px 0 20px;
+  }
+  #section01 p br {
+    display: none;
+  }
+  #section01 .btn-orange {
+    margin: 30px auto 30px;
+  }
+  #section02 .desk {
+    display: none;
+  }
+  #section02 .carousel {
+    display: block;
+  }
+  #section02 .carousel .carousel-cell {
+    margin-right: 20px;
+  }
+  #section02 .carousel .flickity-page-dots,
+  #section02 .carousel .flickity-prev-next-button.previous,
+  #section02 .carousel .flickity-prev-next-button.next {
+    display: none;
+  }
+  #section02 .row {
+    display: flex;
+  }
+  #section02 .row .col .itens p br {
+    display: block;
+  }
+  #section03 fieldset .row {
+    display: block;
+  }
+  #section03 fieldset .intro,
+  #section03 fieldset .form {
+    width: 100%;
+  }
+  #section03 fieldset .intro p br {
+    display: none;
+  }
+  #section03 fieldset .form {
+    padding-top: 30px;
+  }
+  footer .row {
+    display: flex;
+  }
+  img {
+    max-width: 100%;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .modalvideo .close {
+    right: 10px;
+    top: 10px;
+    font-size: 21px;
+    width: 40px;
+    height: 40px;
+  }
+  input[type=text],
+  input[type=email] {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+}

@@ -1,0 +1,140 @@
+:root {
+  --spacing: 4rem;
+
+  --clr-neutral-400: #ffffff;
+  --clr-neutral-500: #f8f8f8;
+  --clr-neutral-600: #cccccc;
+  --clr-neutral-700: #818181;
+  --clr-neutral-800: #212121;
+  --clr-neutral-900: #000000;
+
+  --clr-accent-primary: #f18273;
+  --clr-accent-secondary: #123767;
+
+  // Theme Colors
+  --pink: #ff0662;
+  --orange: #ff9b00;
+  --black: #000000;
+  --grey: #8c8c8c;
+  --border-grey: #c7c7c7;
+  --white: #ffffff;
+
+  // Font Size Titles
+  --fs-h1: 80px;
+  --fs-h2: 36px;
+  --fs-p: 16px;
+  --fs-small: 14px;
+
+  @media (max-width: 1100px) {
+    --fs-h1: 38px;
+    --fs-h2: 24px;
+    --fs-p: 16px;
+    --fs-small: 14px;
+  }
+
+  // --ff-primary: "";
+  // --ff-title: "";
+
+  @media (min-width: 42em) {
+    --spacing: 5rem;
+  }
+
+  @media (min-width: 62em) {
+    --spacing: 6rem;
+  }
+}
+
+html {
+  font-size: 87.5%;
+
+  @media (min-width: 40em) {
+    font-size: 93.75%;
+  }
+
+  @media (min-width: 60em) {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: var(--ff-primary, sans-serif);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-title, sans-serif);
+  line-height: 1.1;
+}
+
+$sizes: (
+  "1": "0.25rem",
+  "2": "0.5rem",
+  "3": "1rem",
+  "4": "1.125rem",
+  "5": "1.25rem",
+  "6": "1.5rem",
+  "7": "1.75rem",
+  "8": "2rem",
+  "9": "2.25rem",
+  "10": "2.5rem",
+);
+
+@each $key, $value in $sizes {
+  .mt-#{$key} {
+    margin-top: #{$value};
+  }
+}
+
+@each $key, $value in $sizes {
+  .mb-#{$key} {
+    margin-bottom: #{$value};
+  }
+}
+
+@each $key, $value in $sizes {
+  .pt-#{$key} {
+    padding-top: #{$value};
+  }
+}
+
+@each $key, $value in $sizes {
+  .pb-#{$key} {
+    padding-bottom: #{$value};
+  }
+}
+
+.container {
+  width: min(90%, 75em);
+  margin-inline: auto;
+}
+
+.padding {
+  padding-block: var(--spacing);
+}
+
+.flow > * + * {
+  margin-top: var(--flow, 1rem);
+}
+
+.auto-columns {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax((min(90%, var(--size, 20rem))), 1fr)
+  );
+  gap: var(--gap, 1.525rem);
+}
+
+.auto-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, 1.525rem);
+
+  > * {
+    flex: 1 1 var(--size, 20rem);
+  }
+}

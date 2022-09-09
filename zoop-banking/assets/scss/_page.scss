@@ -1,0 +1,531 @@
+// Grid
+.col-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // gap: 3rem;
+}
+
+// Buttons
+.pink-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 392px;
+  height: 80px;
+  border: none;
+  background: var(--pink);
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.pink-button:hover {
+  opacity: 0.8;
+}
+
+// Titles
+.t-h1 {
+  font-size: var(--fs-h1);
+  font-weight: bold;
+}
+.t-h2 {
+  font-size: var(--fs-h2);
+  font-weight: bold;
+}
+.t-p {
+  font-size: var(--fs-p);
+  font-weight: normal;
+}
+.t-small {
+  font-size: var(--fs-small);
+  font-weight: normal;
+}
+
+// Text colors
+.txt-white {
+  color: var(--white);
+}
+.txt-black {
+  color: var(--black);
+}
+.txt-orange {
+  color: var(--orange);
+}
+
+.txt-pink {
+  color: var(--pink);
+}
+
+// Page
+
+// Section 01
+#section01 {
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: url("../img/bg-section01.jpg") center center/cover no-repeat;
+
+  .content {
+    position: relative;
+
+    img.logo {
+      max-width: 226px;
+    }
+
+    h1 > span {
+      color: var(--pink);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("../img/arrows-right.svg") center center/contain no-repeat;
+      width: 363px;
+      height: 55px;
+      bottom: 0;
+      right: 0;
+      transform: translateY(5rem);
+    }
+  }
+
+  .box:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    h3 {
+      text-align: center;
+    }
+
+    .form {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      padding: 3rem;
+      max-width: 80%;
+
+      form {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+          width: 100%;
+          height: 40px;
+          margin-bottom: 0.5rem;
+          padding-left: 0.3rem;
+          color: var(--grey);
+          border: 1px solid #c7c7c7;
+
+          &:active,
+          &:focus {
+            outline: none;
+          }
+        }
+
+        select,
+        .optin label,
+        .optin input[type="checkbox"] {
+          cursor: pointer;
+          font-size: 14px;
+        }
+
+        .col-two-form {
+          display: grid;
+          grid-template-columns: repeat(2, 48.4%);
+          gap: 1rem;
+        }
+      }
+    }
+
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+// Section 02
+#section02 {
+  background: url("../img/bg-section02.jpg") center center/cover no-repeat;
+
+  .col-two {
+    position: relative;
+
+    .box:nth-child(1) {
+      z-index: 1;
+
+      img {
+        position: absolute;
+        top: 0;
+        height: 100%;
+      }
+    }
+    .box:nth-child(2) {
+      z-index: 2;
+
+      .content {
+        padding-left: 5.3rem;
+      }
+
+      .list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 0;
+
+        li {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: "";
+            background: url("../img/pink-retangle.svg") center center/contain
+              no-repeat;
+            width: 55px;
+            height: 12px;
+            top: 0.5rem;
+            left: -5rem;
+          }
+        }
+      }
+
+      button {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
+
+// Section 03
+#section03 {
+  position: relative;
+  background: url("../img/bg-section03.jpg") center center/cover no-repeat;
+
+  .box:nth-child(1) {
+    img {
+      position: absolute;
+      height: 750px;
+      bottom: 0;
+      left: 8rem;
+    }
+  }
+  .box:nth-child(2) {
+    .content {
+      padding-left: 5.3rem;
+    }
+  }
+}
+
+// Section 04
+#section04 {
+  position: relative;
+  background: #ffb400;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../img/vector-arrows.svg") center center/100% no-repeat;
+    height: 1021px;
+    width: 657px;
+    bottom: 0;
+    right: 0;
+    transform: translateY(18rem);
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+}
+
+// Section 05
+#section05 {
+  background: url("../img/bg-section05.jpg") center center/cover no-repeat;
+
+  .content {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 2;
+
+    .title {
+      position: relative;
+
+      h2 {
+        position: relative;
+        z-index: 2;
+      }
+
+      .large-pink-square {
+        position: absolute;
+        content: "";
+        background: url("../img/large-pink-retangle.svg") center center/contain
+          no-repeat;
+        width: 630px;
+        height: 85px;
+        bottom: 0rem;
+        left: -5rem;
+        z-index: 1;
+      }
+    }
+
+    .list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding-left: 8rem;
+
+      li {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          background: url("../img/pink-retangle.svg") center center/contain
+            no-repeat;
+          width: 55px;
+          height: 12px;
+          top: 0.5rem;
+          left: -5rem;
+        }
+      }
+    }
+
+    button {
+      margin-left: 8rem;
+    }
+  }
+}
+
+// Section 06
+#section06 {
+  position: relative;
+  background: url("../img/bg-section06.jpg") center center/cover no-repeat;
+
+  .box:nth-child(1) {
+    .content {
+      padding-left: 8rem;
+
+      ul {
+        padding-left: 0;
+        li {
+          position: relative;
+
+          &:before {
+            position: absolute;
+            content: "";
+            background: url("../img/purple-arrow-right.svg") center
+              center/contain no-repeat;
+            width: 55px;
+            height: 12px;
+            top: 0.3rem;
+            left: -3rem;
+          }
+        }
+      }
+    }
+  }
+
+  .box:nth-child(2) {
+    img {
+      position: absolute;
+      height: 850px;
+      bottom: 0;
+    }
+  }
+}
+
+// Section07
+#section07 {
+  .content {
+    h2,
+    p {
+      text-align: center;
+    }
+
+    button {
+      margin: 0 auto;
+    }
+  }
+}
+
+// Footer
+footer {
+  padding: 2rem 0;
+  background-color: #17161a;
+
+  p {
+    color: white;
+  }
+
+  .box:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    img {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .box:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+      text-align: right;
+    }
+  }
+}
+
+// Thanks Page
+#thankpage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../img/bg-thank-page.jpg") center center/cover no-repeat;
+}
+
+// Responsive
+@media (max-width: 1100px) {
+  .col-two {
+    grid-template-columns: 1fr;
+  }
+
+  br {
+    display: none;
+  }
+
+  img {
+    position: relative !important;
+    max-width: 100% !important  ;
+    height: auto !important;
+    margin: 0 auto;
+  }
+
+  .pink-button {
+    width: fit-content;
+    height: auto;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+  }
+
+  #section01 {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  #section02 {
+    .col-two {
+      .box:nth-child(2) {
+        .content {
+          padding-left: 0;
+
+          .list li {
+            &::before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #section03 {
+    .box:nth-child(1) {
+      order: 2;
+      img {
+        left: 0;
+        transform: translateY(4rem);
+      }
+    }
+    .box:nth-child(2) {
+      order: 1;
+      .content {
+        padding-left: 0;
+      }
+    }
+  }
+
+  #section04 {
+    &::after {
+      height: 45%;
+      width: 40%;
+      transform: translateY(4rem);
+    }
+  }
+
+  #section05 {
+    .content {
+      .title {
+        .large-pink-square {
+          width: 27rem;
+          height: 4rem;
+        }
+      }
+      button {
+        margin-left: 0;
+      }
+
+      .list {
+        padding-left: 5rem;
+      }
+    }
+  }
+
+  #section06 {
+    .box:nth-child(1) {
+      .content {
+        padding-left: 1.8rem;
+      }
+    }
+    .box:nth-child(2) {
+      img {
+        transform: translateY(4rem);
+      }
+    }
+  }
+
+  footer {
+    .col-two {
+      .box:nth-child(1) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin: 2rem auto;
+        }
+      }
+      .box:nth-child(2) {
+        justify-content: center;
+      }
+    }
+  }
+
+  #thankpage {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../img/bg-thank-page-responsive.jpg") center center/cover
+      no-repeat;
+
+    h1,
+    p {
+      text-align: center;
+    }
+  }
+}

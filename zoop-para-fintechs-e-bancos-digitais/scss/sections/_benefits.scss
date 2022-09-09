@@ -1,0 +1,64 @@
+.benefits {
+    padding-block: var(--spacing);
+    background-color: var(--lightGray);
+    text-align: center;
+
+    &__container {
+        --space: 2.5rem;
+
+        @media (min-width: 45em) {
+            --space: 3.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+
+            @media (min-width: 45em) {
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+        }
+
+        > p {
+            font-size: 1rem;
+            margin-bottom: var(--space);
+
+            @media (min-width: 45em) {
+                font-size: 1.125rem;
+            }
+        }
+
+        ul {
+            margin-bottom: var(--space);
+            display: grid;
+            gap: 1rem;
+
+            @media (min-width: 45em) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: 70em) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            li {
+                background-color: var(--white);
+                padding: 2rem;
+
+                display: grid;
+                place-items: center;
+
+                p {
+                    font-size: 1.125rem;
+                    max-width: 20ch;
+                    strong {
+                        color: var(--laranja);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TXR8VF2');</script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="utf-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Gabriel Oliveira - bowe.com.br">
+        <meta name="theme-color" content="#000000">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <link href="https://zoop.com.br/wp-content/uploads/2020/08/favicon-1.png" rel="shortcut icon">
+
+        <title>Inclua seu ERP no futuro da automação comercial</title>
+        <meta property="og:title" content="Inclua seu ERP no futuro da automação comercial" />
+        <meta property="og:description" content="Integre meios de pagamento e outros serviços financeiros ao seu sistema de gestão e ofereça uma solução completa aos seus clientes. Fale conosco." />
+        <meta property="og:url" content="https://zoop.com.br/" />
+        <meta property="og:site_name" content="Zoop" />
+        <meta property="og:image" content="assets/images/PreviewSite.jpg" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/8b3ca3a6-9299-4069-9610-d03e34a36e59-loader.js" ></script>
+        <script type ='text/javascript' src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            @media screen and (min-width: 300px) and (max-width: 767px){
+                .modalvideo iframe {
+                    width: 80%;
+                    height: 200px;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1279px){
+                .modalvideo iframe {
+                    width: 80%;
+                    height: 400px;
+                }
+            }
+
+            #playvideo{
+                cursor: pointer;
+            }
+            select#transacionado, select#contas {
+                margin: 0 15px 15px 0;
+            }
+            select#contas {
+                margin: 0 0 15px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXR8VF2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="modalvideo">
+            <button class="close">X</button>
+            <!--video controls="" class="videointerno" preload="auto" controlslist="nodownload" disablepictureinpicture="disablePictureInPicture"><source src="//zoop.com.br/wp-content/uploads/2020/08/zoop_video_institucional_legendado.mp4" type="video/mp4"></video-->
+            <iframe width="80%" height="80%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div><!--modalvideo-->
+
+        <section id="section01">
+
+            <div class="container">
+
+                <div class="intro">
+                    <img src="assets/images/logo.svg">
+                    <img class="arrow" src="assets/images/arrow.svg">
+                    <h1>Com a Zoop, o futuro<br>
+                        do seu ERP é agora
+                    </h1>
+                    <p>
+                        <i>Integre meios de pagamento e outros 
+                        serviços financeiros ao seu sistema de gestão
+                        e ofereça uma solução completa aos seus clientes.</i>
+                        <br><br>
+                        <i>
+                            Reinvente o seu ERP e gere novas <br>
+                            formas de receita com a Zoop.
+                        </i>
+                        <br><br>
+                    </p>
+                    <button class="botao01" id="playvideo">
+                        Assista ao vídeo agora
+                    </button>
+                </div><!--intro-->
+
+                <div class="form" id="form">
+                    <a href="#" id="close-form" title="Fechar formulário">
+                        <img src="assets/images/close-form.svg" alt="Fechar formulário">
+                    </a>
+                    <h5>
+                        É hora de abrir o leque.<br>
+                        <b>Envie seus dados. Em breve, retornaremos.</b>
+                    </h5>
+                    <form>
+                        <input name="utm_source" id="utm_source" type="hidden">
+                        <input name="utm_medium" id="utm_medium" type="hidden">
+                        <input name="utm_campaign" id="utm_campaign" type="hidden">      
+                        <input name="utm_term" id="utm_term" type="hidden">
+                        <input name="utm_content" id="utm_content" type="hidden">
+                           
+                        <input type="text" id="nome" name="nome" value="" size="40"  placeholder="Primeiro nome*" />
+                        <input type="text" id="sobrenome" name="sobrenome" value="" size="40"  placeholder="Sobrenome*" />
+                        <div class="clearfix"></div>
+                        <input type="email" id="email" name="email" value="" size="40" placeholder="E-mail corporativo*" />
+                        <input type="tel" id="tel" name="tel" value="" size="40" placeholder="(__) ________*" />
+                        <input type="text" id="empresa" name="empresa" value="" size="40"  placeholder="Empresa*" />
+                        <select id="tem-cnpj" name="tem-cnpj">
+                            <option value="nulo">Possui CNPJ?*</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                            </select>
+                            <div class="clearfix"></div>
+                        <select id="cargo" name="cargo">
+                            <option value="nulo">Cargo*</option>
+                            <option value="Proprietário/Sócio">Proprietário/Sócio</option>
+                            <option value="Diretor">Diretor</option>
+                            <option value="Gerente/Coordenador">Gerente/Coordenador</option>
+                            <option value="Analista">Analista</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <select id="areaatuacao" name="areaatuacao">
+                            <option value="nulo">Área*</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Compras">Compras</option>
+                            <option value="Financeiro">Financeiro</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Inovação/Novos Negócios">Inovação/Novos Negócios</option>
+                            <option value="Recursos Humanos">Recursos Humanos</option>
+                            <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+                            <option value="Vendas">Vendas</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                        <div class="clearfix"></div>
+                        <select id="tamanho" name="tamanho">
+                            <option value="nulo">Nº de funcionários*</option>
+                            <option value="Até 10 funcionários">Até 10 funcionários</option>
+                            <option value="11 a 100">11 a 100</option>
+                            <option value="101 a 500">101 a 500</option>
+                            <option value="501 a 1k">501 a 1k</option>
+                            <option value="mais do que 1k">mais do que 1k</option>
+                        </select>
+                        <select id="area" name="area">
+                            <option value="nulo">Áreas de interesse*</option>
+                            <option value="Pagamentos">Pagamentos - Quero construir soluções de cobrança personalizada para meus clientes.</option>
+                            <option value="Banking">Banking - Quero proporcionar a experiência de um banco digital com a minha marca para meus clientes.</option>
+                            <option value="Pagamentos/Banking">Pagamentos e Banking - Quero construir soluções de cobrança para meus clientes e quero proporcionar a experiência de um banco digital com a minha marca para meus clientes.</option>
+                        </select>
+                        <div class="clearfix"></div>
+                        <select id="transacionado" name="transacionado">
+                            <option value="nulo">Faturamento médio mensal dos seus clientes</option>
+                            <option value="Não operando">Não operando</option>
+                            <option value="até 500k">até 500k</option>
+                            <option value="501k a 1 MM">501k a 1 MM</option>
+                            <option value="1 MM a 5 MM">1 MM a 5 MM</option>
+                            <option value="5 MM a 10 MM">5 MM a 10 MM</option>
+                            <option value="10 MM a 30 MM">10 MM a 30 MM</option>
+                            <option value="Acima de 30 MM">Acima de 30 MM</option>
+                        </select>
+                        <select id="contas" name="contas">
+                            <option value="nulo">Quantos usuários existentes para as Contas Digitais?</option>
+                            <option value="Não Operando">Não Operando</option>
+                            <option value="0 a 5 mil">0 a 5 mil</option>
+                            <option value="5.001 a 10 mil">5.001 a 10 mil</option>
+                            <option value="10.001 a 30 mil">10.001 a 30 mil</option>
+                            <option value="30.001 a 50 mil">30.001 a 50 mil</option>
+                            <option value="mais do que 100 mil">mais do que 100 mil</option>
+                        </select>
+                        <div class="clearfix"></div>
+                        <div class="optin">
+                            <input type="checkbox" id="optin" name="optin">
+                            <label for="optin">Eu concordo em receber comunicações sobre os produtos Zoop e estou ciente da <a href="https://zoop.com.br/politica/privacidade." target="_blank">Política de Privacidade.</a><br>
+                            <span>*Você pode alterar suas permissões de comunicação a qualquer momento.</span></label>
+                            <style>
+                                .optin label{
+                                    font-family: Roboto;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.5;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color:#000;
+                                }
+                                .optin a{
+                                    color:#000;
+                                }
+                                .optin span{
+                                    font-size: 12px;
+                                }
+                            </style>
+                        </div>
+                        <button id="enviar">Quero conversar</button>
+                    </form>
+
+                </div><!--form-->
+
+            </div><!--container-->
+        </section><!--section01-->
+
+        <section id="section02">
+            <div class="container">
+                <h3>Sem <b id="typed"></b></h3>
+            </div>
+        </section>
+
+        <section id="section03">
+            <div class="container">
+                
+                <div class="div01">
+                    <img src="assets/images/img02.webp">
+                </div>
+
+                <div class="div02">
+                    <h2>Inclua seu ERP no futuro<br>
+                        da <b>automação comercial</b></h2>
+                    <p>
+                        Empresas de meios de pagamento e serviços financeiros 
+                        estão agregando a gestão financeira às suas soluções.
+                        <br><br>
+
+                        E os maiores ERPs do mercado estão integrando recursos 
+                        que visam facilitar pagamentos e a conciliação bancária dos clientes.
+                        <br><br>
+
+                        <b>Não fique para trás.</b><br><br>
+
+                        Com a Zoop, você pode oferecer uma solução completa
+                        aos seus clientes, com a marca do seu negócio.
+                    </p>
+
+                    <h3>Mais clientes.<br>
+                        Mais receita.<br>
+                        Mais crescimento.</h3>
+    
+                    <a class="btn-border" href="#form">Quero saber mais</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section04">
+            <div class="container">
+                <h2>
+                    Cuide do seu ERP. Nós facilitamos<br>
+                     os pagamentos. <b>E muito mais.</b>
+                </h2>
+                <p>
+                    <b>Os pagamentos são só o começo.</b> Com a Zoop, você pode criar suas próprias soluções financeiras, com a sua marca, e gerenciar tudo em um único lugar, através de uma plataforma 100% White Label.</p>
+                <img src="assets/images/bg04.webp">
+            </div><!--container-->
+        </section>
+
+        <section id="section05">
+            <div class="container">
+                <div class="col">
+                    <img src="assets/images/icon01.svg">
+                    <h2 class="umalinha">Omnichannel</h2>
+                    <p>Receba online, pelo e-commerce, app ou pagamentos recorrentes. 
+                        E  também presencialmente, através de POS, TEF ou mobile.</p>
+                        <a class="btn-border-small" href="#form">Quero ser Omnichannel</a>
+                </div><!--col-->
+                <div class="col">
+                    <img src="assets/images/icon02.svg">
+                    <h2 class="umalinha">Split de pagamentos</h2>
+                    <p>Divida os valores das vendas entre todos os vendedores envolvidos de forma automática e personalizável.</p>
+                    <a class="btn-border-small" href="#form">Quero esse recurso</a>
+                </div><!--col-->
+                <div class="col">
+                    <img src="assets/images/icon03.svg">
+                    <h2>Conformidade regulatória</h2>
+                    <p>Estamos em dia com a regulação do sistema de pagamentos brasileiro e somos credenciados pelas principais bandeiras 
+                        de cartão.</p>
+                    <a class="btn-border-small" href="#form">Quero cumprir as leis</a>
+                </div><!--col-->
+                <div class="col">
+                    <img src="assets/images/icon04.svg">
+                    <h2 class="umalinha">Custo</h2>
+                    <p>Com a Zoop, você paga apenas uma taxa sobre transações aprovadas. E nada mais.</p>
+                    <a class="btn-border-small" href="#form">Quero economizar</a>
+
+                </div><!--col-->
+            </div><!--container-->
+            <div class="clearfix"></div>
+        </section><!--section05-->
+
+        <section id="section06">
+            <div class="container">
+                <div class="div01">
+                    <h2>Destaque seu ERP<br>
+                        entre a concorrência</h2>
+                        <p>Inclua seu negócio em um futuro onde 
+                            não há espaço para quem parou no tempo.
+                            <br><br>
+                            Acompanhe as tendências de mercado 
+                            e ofereça uma solução completa aos seus clientes.
+                            <br><br>
+                            Integre meios de pagamento e serviços financeiros
+                            ao seu ERP com a Zoop, de forma fácil, rápida e segura.</p>
+
+                    <a class="btn-border-white" href="#form">Quero conversar</a>
+                </div>
+                <div class="div02">
+                    <ul>
+                        <li>
+                            <img src="assets/images/icon05.svg">
+                            <p>Integração simples</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/icon06.svg">
+                            <p>Implementação rápida</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/icon07.svg">
+                            <p>Segurança garantida</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/icon08.svg">
+                            <p>Flexibilidade operacional</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div><!--container-->
+            <div class="clearfix"></div>
+        </section><!--section06-->
+
+        <section id="section07">
+            <div class="container">
+                <div class="logos">
+                    <img src="assets/images/cliente01.svg" style="height: 51px; top: 14px; position: relative;">
+                    <img src="assets/images/cliente02.svg" style="height: 26.4px;">
+                    <img src="assets/images/cliente03.svg" style="height: 48px; top: 9px; position: relative;">
+                    <img src="assets/images/cliente04.svg" style="height: 40px; top: 6px; position: relative;">
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="div01">
+                    <h2>Assuma o controle,<br>
+                        de ponta a ponta </h2>
+                    <p>
+                        Cliente Zoop paga apenas pelas soluções que precisa. Você tem tudo 
+                        em um único painel, e pode customizar de acordo com as necessidades 
+                        da sua empresa.
+                        <br><br>
+                        Ao invés de terceirizar seus serviços financeiros, você terá o seu 
+                        próprio sistema e poderá manter o controle de pagamentos, transferências 
+                        e outras transações.
+                    </p>
+                    <h3>É você no controle.</h3>
+                    <a class="btn-border-white" href="#form">Quero saber mais</a>
+                </div><!--div02-->
+
+                <div class="clearfix"></div>
+
+            </div><!--container-->
+        </section><!--section07-->
+
+        <section id="section08">
+            <div class="container">
+                
+                <h2>Faça o upgrade que o<br> 
+                    seu ERP mais precisa</h2>
+
+                <h3>O seu ERP, à prova de futuro, com a Zoop.</h3>
+                <div class="clearfix"></div>
+    
+                <a class="btn-pink" href="#form">Quero cotar</a>
+
+            </div><!--container-->
+        </section><!--section08-->
+
+        <section id="section09">
+            <div class="container">
+                <div class="div01">
+                    <img src="assets/images/logo-rodape.svg">
+                </div><!--col01-->
+                <div class="div02">
+                    <p>© Zoop - Todos os direitos reservados</p>
+                </div><!--col02-->
+            </div><!--container-->
+        </section><!--section09-->
+
+        <div class="botaofixo">
+            <a id="abrir-form">Fale com um especialista</a>
+            <style>
+                .botaofixo a{
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    background-color: #FF7300;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: italic;
+                    line-height: 2.5;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #fff;
+                    font-family: PraktikaRounded-ExtraItalic-Bold;
+                    display: none;
+                    position: fixed;
+                    bottom: 0;
+                }
+                #close-form {
+                    background: transparent;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 999;
+                    padding: 10px;
+                    display: none;
+                }
+                @media screen and (max-width:767px){
+                    .btn-pink,.btn-border,.btn-border-small,.btn-border-white,.btn-border-black,.btn-border-orange{
+                        display:none!important;
+                    }
+                    .swal2-container {
+                        z-index: 9999999999;
+                    }
+                    .botaofixo a{
+                        display: block;
+                    }
+                    #close-form {
+                        display: block;
+                    }
+                    #section01 .form{
+                        position: absolute;
+                        top: 0;
+                        margin: 0;
+                        left: 0;
+                        width: 90%!important;
+                        height: 100%!important;
+                        display: none;
+                        overflow-y: auto;
+                        z-index: 999999999;
+                    }
+                    form button {
+                        margin-bottom: 40px;
+                        width: 100%;
+                    }
+                }
+            </style>
+            <script>
+                $(document).ready(function() {
+
+                    var tela = $(window).width();
+
+                    $('#abrir-form').click(function() {
+
+                        $('html, body').animate({
+                            scrollTop: $('body').offset().top
+                        }, 500);
+
+                        $('.form').show();
+                        $('html').css('overflow-y','hidden');
+
+                        return false;
+
+                    });
+
+                    $('#close-form').click(function() {
+
+                        $('.form').hide();
+                        $('html').css('overflow-y','auto');
+
+                        return false;
+
+                    });
+
+                });
+            </script>
+        </div><!--botãofixo-->
+
+        <footer>
+            <script src="assets/js/scripts.js"></script>
+        </footer>
+
+                <!-- inicio cokies -->
+                <script>
+                    function aceitarCookies() {
+                        document.cookie="aceitouAvisoCookie=true";
+                        $('#banner-cookies-privacidade').css('display','none');
+                    }
+                </script>
+        
+                <style>
+                    .col-sm-3 {
+                        width: 25%;
+                    }
+                    .col-sm-6 {
+                        width: 65%;
+                    }
+                    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+                        float: left;
+                    }
+                    .banner-cookies {
+                        width: 100%;
+                        background-color: #000000;
+                        bottom: 0;
+                        position: fixed;
+                        z-index: 99999999;
+                        font-family: 'Roboto',sans-serif;
+                        padding: 20px 0px;
+                    }
+        
+                    .banner-cookies-tit {
+                        font-size: 25px;
+                        color: #FFF;
+                    }
+        
+                    .banner-cookies-txt {
+                        font-size: 13px;
+                        color: #FFF;
+                        padding: 8px 10px;
+                    }
+        
+                    .banner-cookies-txt a {
+                        color: #FF7300;
+                        text-decoration: underline;
+                    }
+        
+                    .banner-cookies-txt a:hover {
+                        color: #FF7300;
+                        text-decoration: underline;
+                    }
+        
+                    .banner-cookies-botao {
+                        text-align: right;
+                    }
+        
+                    button.btn-aceitar {
+                        text-decoration: none;
+                        border: none;
+                        color: #FFF;
+                        font-size: 15px;
+                        background-color: #FF7300;
+                        height: 35px;
+                        font-family: 'Roboto',sans-serif;
+                        line-height: 18px;
+                        letter-spacing: .2px;
+                        text-align: center;
+                        padding: 9px;
+                        z-index: 9999999999!important;
+                    }
+        
+                    button.btn-aceitar :active :focus :hover :visited{
+                        border-radius: 20px;
+                        text-decoration: none;
+                        border: none;
+                        color: #FFF;
+                        font-size: 15px;
+                        background-color: #FF7300;
+                        width: 100%;
+                        height: 35px;
+                        font-family: 'Roboto',sans-serif;
+                        line-height: 18px;
+                        letter-spacing: .2px;
+                        text-align: center;
+                        padding: 9px;
+                        z-index: 9999999999!important;
+                    }
+                    .container-cookies{
+                        width:95%;
+                        margin: 0 auto;
+                    }
+
+                    @media screen and (max-width:766px){
+                        .banner-cookies {
+                            bottom: 50px;
+                        }
+                        #banner-cookies-privacidade .col-sm-1,#banner-cookies-privacidade .col-sm-2,#banner-cookies-privacidade .col-sm-3,#banner-cookies-privacidade .col-sm-4,#banner-cookies-privacidade .col-sm-5,#banner-cookies-privacidade .col-sm-6,#banner-cookies-privacidade .col-sm-7,#banner-cookies-privacidade .col-sm-8,#banner-cookies-privacidade .col-sm-9,#banner-cookies-privacidade .col-sm-10,#banner-cookies-privacidade .col-sm-11,#banner-cookies-privacidade .col-sm-12 {
+                            float: left;
+                            width: 100%;
+                            text-align: left;
+                        }
+                        .banner-cookies-txt {
+                            font-size: 11px;
+                        }
+                        .banner-cookies-botao {
+                            padding-left: 10px;
+                            text-align: left;
+                        }
+                        button.btn-aceitar {
+                            font-size: 9px;
+                            height: auto;
+                            line-height: 5px;
+                            text-align: center;
+                            padding: 9px;
+                        }
+                    }
+                </style>
+        
+                <section id="banner-cookies-privacidade">
+                    <div class="banner-cookies">
+                        <div class="container-cookies">
+                            <div class="col-sm-6 col-xs-12 banner-cookies-txt">
+                                Usamos cookies em nosso site para fornecer uma experiência mais relevante, lembrando suas preferências e visitas. Ao clicar em “Aceitar”, concorda com a utilização de TODOS os cookies.
+                            </div>
+                            <div class="col-sm-3 col-xs-12 banner-cookies-botao">
+                                <button onclick="aceitarCookies()" class="btn-aceitar">
+                                    Aceitar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        
+                <!-- fim cokies -->
+                
+    </body>
+</html>

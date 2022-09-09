@@ -1,0 +1,23 @@
+.glider-container {
+    position: relative;
+    padding-inline: 1rem;
+
+    margin-top: 2rem;
+
+    .glider {
+    }
+
+    .glider-prev,
+    .glider-next {
+        display: block;
+        position: absolute;
+    }
+
+    .glider-prev {
+        left: -10px;
+    }
+
+    .glider-next {
+        right: -10px;
+    }
+}

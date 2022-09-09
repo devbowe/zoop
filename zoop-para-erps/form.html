@@ -1,0 +1,143 @@
+<form>
+
+    <label>Você possui CNPJ?<br /></label>
+       <span>Sim</span><input type="radio" name="tem-cnpj" value="Sim" /></span>
+       <span>Não</span><input type="radio" name="tem-cnpj" value="Não" checked="checked" />
+    
+    <label>Nome completo<br />
+       <span class="nome"><input type="text" name="nome" value="" size="40"  aria-required="true" aria-invalid="false" placeholder="Nome" /></span></label>
+    
+    <label>Sobrenome<br />
+       <span class="sobrenome"><input type="text" name="sobrenome" value="" size="40"  aria-required="true" aria-invalid="false" placeholder="Sobrenome" /></span></label>
+    
+    <label>E-mail corporativo<br />
+       <span class="email"><input type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="email@novo.zoop.com.br" /></span></label><br />
+       <span class="wpcf7-not-valid-tip validaemail">Insira um e-mail comercial válido</span>
+    
+    <label>Telefone<br />
+       <span class="tel"><input type="tel" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="(__) ________" /></span></label>
+    
+    <label>Empresa<br />
+       <span class="empresa"><input type="text" name="empresa" value="" size="40"  aria-required="true" aria-invalid="false" placeholder="Zoop" /></span></label>
+    
+    
+       <label>
+          Cargo:<br />
+          <span class="cargo">
+             <select name="cargo" aria-required="true" aria-invalid="false">
+                <option value="">Selecione uma das opções</option>
+                <option value="Proprietário/Sócio">Proprietário/Sócio</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Gerente/Coordenador">Gerente/Coordenador</option>
+                <option value="Analista">Analista</option>
+                <option value="Outro">Outro</option>
+             </select>
+          </span>
+       </label>
+    
+    
+       <label>
+          Área:<br />
+          <span class="areaatuacao">
+             <select name="areaatuacao" aria-required="true" aria-invalid="false">
+                <option value="">Selecione uma das opções</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Compras">Compras</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Inovação/Novos Negócios">Inovação/Novos Negócios</option>
+                <option value="Recursos Humanos">Recursos Humanos</option>
+                <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+                <option value="Vendas">Vendas</option>
+                <option value="Outros">Outros</option>
+             </select>
+          </span>
+       </label>
+    
+    
+       <label>
+          Nº de funcionários:<br />
+          <span class="tamanho">
+             <select name="tamanho" aria-required="true" aria-invalid="false">
+                <option value="">Selecione uma das opções</option>
+                <option value="até 10 funcionários">até 10 funcionários</option>
+                <option value="11 - 100">11 - 100</option>
+                <option value="101 - 500">101 - 500</option>
+                <option value="501 - 1K">501 - 1K</option>
+                <option value="&gt; 1K">&gt; 1K</option>
+             </select>
+          </span>
+       </label>
+    
+    <div class="area">
+       <label>
+          Áreas de interesse:<br />
+          <span class="area">
+             <select name="area" aria-required="true" aria-invalid="false">
+                <option value="">Selecione uma das opções</option>
+                <option value="nulo">Áreas de interesse</option>
+                <option value="Pagamentos">Pagamentos - Quero construir soluções de cobrança personalizada para meus clientes.</option>
+                <option value="Banking">Banking - Quero proporcionar a experiência de um banco digital com a minha marca para meus clientes.</option>
+                <option value="Pagamentos/Banking">Pagamentos e Banking - Quero construir soluções de cobrança para meus clientes e quero proporcionar a experiência de um banco digital com a minha marca para meus clientes.</option>
+             </select>
+          </span>
+       </label>
+    </div>
+    
+    <div class="pagamentos">
+       <label>
+          Qual o valor transacionado pelos seus clientes?<br />
+          <span class="transacionado">
+             <select name="transacionado" aria-invalid="false">
+                <option value="">Selecione uma das opções</option>
+                <option value="até 100K">até 100K</option>
+                <option value="101K - 500K">101K - 500K</option>
+                <option value="501K - 2 milhões">501K - 2 milhões</option>
+                <option value="&gt; 2 milhões">&gt; 2 milhões</option>
+             </select>
+          </span>
+       </label>
+    </div>
+
+    <div class="banking">
+       <label>
+          Potencial número de contas bancárias<br />
+          <span class="contas">
+             <select name="contas" aria-invalid="false">
+                <option value="">Selecione uma das opções</option>
+                <option value="0 - 1 mil">0 - 1 mil</option>
+                <option value="1.001 - 5 mil">1.001 - 5 mil</option>
+                <option value="5.001 - 20 mil">5.001 - 20 mil</option>
+                <option value="&gt; 20 mil">&gt; 20 mil</option>
+             </select>
+          </span>
+       </label>
+    </div>
+
+    <div class="optin">
+                            <input type="checkbox" id="optin" name="optin">
+                            <label for="optin">Eu concordo em receber comunicações sobre os produtos Zoop e estou ciente da <a href="https://zoop.com.br/politica/privacidade." target="_blank">Política de Privacidade.</a><br>
+                            <span>*Você pode alterar suas permissões de comunicação a qualquer momento.</span></label>
+                            <style>
+                                .optin label{
+                                    font-family: Roboto;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.5;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color:#000;
+                                }
+                                .optin a{
+                                    color:#000;
+                                }
+                                .optin span{
+                                    font-size: 12px;
+                                }
+                            </style>
+                        </div>
+                        <button id="enviar">Enviar</button>
+    
+</form>

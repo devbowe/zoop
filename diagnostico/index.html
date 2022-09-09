@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TXR8VF2');</script>
+        <!-- End Google Tag Manager -->
+
+        <meta charset="utf-8">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Gabriel Oliveira - bowe.com.br">
+        <meta name="theme-color" content="#000000">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <link href="https://zoop.com.br/wp-content/uploads/2020/08/favicon-1.png" rel="shortcut icon">
+
+        <title>Zoop | Diagnóstico gratuito</title>
+        <meta property="og:title" content="Zoop | Diagnóstico gratuito" />
+        <meta property="og:description" content="Faça o diagnóstico gratuito da Zoop e descubra se você oferece uma experiência de pagamento descomplicada de verdade." />
+        <meta property="og:url" content="https://zoop.com.br/" />
+        <meta property="og:site_name" content="Zoop" />
+        <meta property="og:image" content="assets/images/PreviewSite.jpg" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/8b3ca3a6-9299-4069-9610-d03e34a36e59-loader.js" ></script>
+        <script type ='text/javascript' src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            @media screen and (min-width: 300px) and (max-width: 767px){
+                .modalvideo iframe {
+                    width: 80%;
+                    height: 200px;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1279px){
+                .modalvideo iframe {
+                    width: 80%;
+                    height: 350px;
+                }
+            }
+
+            #playvideo{
+                cursor: pointer;
+            }
+            select#transacionado, select#contas {
+                margin: 0 15px 15px 0;
+            }
+            select#contas {
+                margin: 0 0 15px 0;
+            }
+
+            #section01 {
+                background-size: cover !important;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXR8VF2"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="modalvideo">
+            <button class="close">X</button>
+            <!--video controls="" class="videointerno" preload="auto" controlslist="nodownload" disablepictureinpicture="disablePictureInPicture"><source src="//zoop.com.br/wp-content/uploads/2020/08/zoop_video_institucional_legendado.mp4" type="video/mp4"></video-->
+            <iframe width="80%" height="80%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div><!--modalvideo-->
+
+        <section id="section01">
+
+            <div class="container">
+
+                <div class="intro">
+                    <img class="logo" src="assets/images/logo.svg">
+                    <h4>Diagnóstico para e-commerces e marketplaces</h4>
+                    <h1>
+                        Pagamentos sem<br> 
+                        fricção para seguir<br> 
+                        crescendo
+                    </h1>
+                    <p>
+                        <i>
+                            Faça o diagnóstico completo da sua operação, 
+                            de forma gratuita, e descubra se você oferece 
+                            uma experiência de pagamento descomplicada de verdade!
+                            <br/><br/>
+                            <b>Colocamos nossos melhores especialistas<br> 
+                            à sua disposição para um bate-papo.</b>
+                        </i>
+                    </p>
+                </div><!--intro-->
+
+                <div class="form" id="form">
+                    <a href="#" id="close-form" title="Fechar formulário">
+                        <img src="assets/images/close-form.svg" alt="Fechar formulário">
+                    </a>
+                    <h5>Preencha e nos envie para agendar um diagnóstico.</h5>
+                    <p>Não se preocupe: seus dados estão sempre seguros conosco.</p>
+                    <form>
+                        <input name="utm_source" id="utm_source" type="hidden">
+                        <input name="utm_medium" id="utm_medium" type="hidden">
+                        <input name="utm_campaign" id="utm_campaign" type="hidden">    
+                        <input name="utm_content" id="utm_content" type="hidden">    
+                        <input name="url_pagina" id="url_pagina" type="hidden">      
+     
+                        <input type="text" id="nome" name="nome" value="" size="40"  placeholder="Primeiro Nome*" />
+                        <input type="text" id="sobrenome" name="sobrenome" value="" size="40"  placeholder="Sobrenome*" />
+                        <div class="clearfix"></div>
+                        <input type="email" id="email" name="email" value="" size="40" placeholder="E-mail Corporativo*" />
+                        <input type="tel" id="tel" name="tel" value="" size="40" placeholder="(__) ________*" />
+                        <input type="text" id="empresa" name="empresa" value="" size="40"  placeholder="Empresa*" />
+                        <select id="tem-cnpj" name="tem-cnpj">
+                            <option value="nulo">Possui CNPJ?*</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        <div class="clearfix"></div>
+                        <select id="cargo" name="cargo">
+                            <option value="nulo">Cargo*</option>
+                            <option value="Proprietário/Sócio">Proprietário/Sócio</option>
+                            <option value="Diretor">Diretor</option>
+                            <option value="Gerente/Coordenador">Gerente/Coordenador</option>
+                            <option value="Analista">Analista</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+
+                        <!-- <select id="areaatuacao" name="areaatuacao">
+                            <option value="nulo">Área*</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Compras">Compras</option>
+                            <option value="Financeiro">Financeiro</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Inovação/Novos Negócios">Inovação/Novos Negócios</option>
+                            <option value="Recursos Humanos">Recursos Humanos</option>
+                            <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+                            <option value="Vendas">Vendas</option>
+                            <option value="Outros">Outros</option>
+                        </select> -->
+
+                        <select id="setormercado" name="setormercado">
+                            <option value="nulo">Setor de mercado</option>
+                            <option value="Moda">Moda</option>
+                            <option value="Indústria">Indústria</option>
+                            <option value="Varejo de alimentos">Varejo de alimentos</option>
+                            <option value="Alimentos e bebidas">Alimentos e bebidas</option>
+                            <option value="Saude e cosméticos">Saude e cosméticos</option>
+                            <option value="Varejo e atacado">Varejo e atacado</option>
+                            <option value="Construção">Construção</option>
+                            <option value="Educação">Educação</option>
+                            <option value="Informática">Informática</option>
+                            <option value="Marketing digital">Marketing digital</option>
+                            <option value="Logistica">Logistica</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                        <select id="tamanho" name="tamanho">
+                            <option value="nulo">Nº de funcionários*</option>
+                            <option value="Até 10 funcionários">Até 10 funcionários</option>
+                            <option value="11 a 100">11 a 100</option>
+                            <option value="101 a 500">101 a 500</option>
+                            <option value="501 a 1k">501 a 1k</option>
+                            <option value="mais do que 1k">mais do que 1k</option>
+                        </select>
+                        <select id="area" name="area">
+                            <option value="nulo">Área de interesse*</option>
+                            <option value="Pagamentos">Pagamentos - Quero construir soluções de cobrança personalizada para meus clientes.</option>
+                            <option value="Banking">Banking - Quero proporcionar a experiência de um banco digital com a minha marca para meus clientes.</option>
+                            <option value="Pagamentos/Banking">Pagamentos e Banking - Quero construir soluções de cobrança para meus clientes e quero proporcionar a experiência de um banco digital com a minha marca para meus clientes.</option>
+                        </select>
+                        <div class="clearfix"></div>
+                        <select id="transacionado" name="transacionado">
+                            <option value="nulo">Qual é o volume médio transacionado na sua empresa?</option>
+                            <option value="Não operando">Não operando</option>
+                            <option value="até 500k">até 500k</option>
+                            <option value="501k a 1 MM">501k a 1 MM</option>
+                            <option value="1 MM a 5 MM">1 MM a 5 MM</option>
+                            <option value="5 MM a 10 MM">5 MM a 10 MM</option>
+                            <option value="10 MM a 30 MM">10 MM a 30 MM</option>
+                            <option value="Acima de 30 MM">Acima de 30 MM</option>
+                        </select>
+                        <select id="contas" name="contas">
+                            <option value="nulo">Qual é o potencial de contas da base em até 1 ano?</option>
+                            <option value="Não Operando">Não Operando</option>
+                            <option value="0 a 5 mil">0 a 5 mil</option>
+                            <option value="5.001 a 10 mil">5.001 a 10 mil</option>
+                            <option value="10.001 a 30 mil">10.001 a 30 mil</option>
+                            <option value="30.001 a 50 mil">30.001 a 50 mil</option>
+                            <option value="mais do que 100 mil">mais do que 100 mil</option>
+                        </select>
+
+                        <select name="dev-proprio">
+                            <option value="nulo">Você tem um time de desenvolvimento próprio?*</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>
+                        
+                        <select name="ajuda">
+                            <option value="nulo">Como a Zoop poderia te ajudar hoje?</option>
+                            <option value="Quero ter a minha própria processadora de pagamentos personalizada.">Quero ter a minha própria processadora de pagamentos personalizada.</option>
+                            <option value="Quero oferecer serviços de um banco digital para meus clientes.">Quero oferecer serviços de um banco digital para meus clientes.</option>
+                            <option value="Tenho um projeto novo e quero a zoop comigo nessa.">Tenho um projeto novo e quero a zoop comigo nessa.</option>
+                            <option value="Quero comparar os preços da zoop com a concorrência.">Quero comparar os preços da zoop com a concorrência.</option>
+                            <option value="Quero comprar maquininhas.">Quero comprar maquininhas.</option>
+                            <option value="Não sei muito bem quais são as minhas necessidades ainda.">Não sei muito bem quais são as minhas necessidades ainda.</option>
+                        </select>
+                        
+                        <input type="text" name="sujestao" placeholder="Algo mais que gostaria de dizer?" />
+                        
+                        <div class="clearfix"></div>
+                        <div class="optin">
+                            <input type="checkbox" id="optin" name="optin">
+                            <label for="optin">Eu concordo em receber comunicações sobre os produtos Zoop e estou ciente da <b><a href="https://zoop.com.br/politica/privacidade." target="_blank">Política de Privacidade.</a></b><br>
+                            <span>*Você pode alterar suas permissões de comunicação a qualquer momento.</span></label>
+                            <style>
+                                .optin label{
+                                    font-family: Roboto;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    font-stretch: normal;
+                                    font-style: normal;
+                                    line-height: 1.5;
+                                    letter-spacing: normal;
+                                    text-align: left;
+                                    color:#000;
+                                }
+                                .optin a{
+                                    color:#000;
+                                }
+                                .optin span{
+                                    font-size: 12px;
+                                }
+                            </style>
+                        </div>
+                        <button id="enviar">Fazer diagnóstico</button>
+                    </form>
+
+                </div><!--form-->
+
+            </div><!--container-->
+        </section><!--section01-->
+
+        <section id="section02">
+            <div class="container">
+                <h2>O que é o diagnóstico Zoop?</h2>
+                <p>
+                    A Zoop, com suas soluções inteligentes, possibilita que empresas possam criar e oferecer <br class="d-none">
+                    meios de pagamento inovadores, com marca própria, em ambiente seguro e certificado.<br><br>
+
+                    Entendemos que um mercado forte é um mercado em que negócios digitais estão cada <br class="d-none">
+                    vez mais preparados para oferecer soluções de pagamentos descomplicadas e encantar <br class="d-none">
+                    clientes com experiências únicas.<br><br>
+
+                    Pensando nisso, decidimos colocar nossos melhores especialistas à sua disposição para <br class="d-none">
+                    um bate-papo. A ideia é escanear a maneira como o seu e-commerce ou marketplace oferece <br class="d-none">
+                    experiências de pagamentos atualmente e te entregar um diagnóstico consultivo e<br class="d-none"> 100% personalizado.
+                    O que analisaremos neste bate-papo:
+
+                </p>
+                <div class="list">
+                    <ul>
+                        <li>Sua estrutura atual de pagamentos</li>
+                        <li>Tecnologias usadas</li>
+                        <li>Softwares à disposição</li>
+                        <li>Soluções de simplificação de processos</li>
+                        <li>Todas as integrações do sistema</li>
+                    </ul>
+                    <ul>
+                        <li>Ferramentas de gestão financeira</li>
+                        <li>Recursos de facilitação interna</li>
+                        <li>Vantagens oferecidas aos clientes</li>
+                        <li>Experiência de pagamento como um todo</li>
+                    </ul>
+                </div>
+
+                <a class="btn-border-black" href="#form">Quero uma análise</a>
+            </div><!--container-->
+        </section><!--section01-->
+
+        <section id="section03">
+            <div class="div01">
+                <div class="container">
+                    <h2>Case de sucesso: quando Zoop e<br>
+                        iFood se encontraram
+                       </h2>
+                       <p>
+                           A construção das soluções de pagamento do iFood se iniciou quando, em parceria com a Zoop, a empresa lançou<br class="d-sm-none d-none">
+                           seus próprios meios de pagamento, <b>aumentando sua receita em quase 10%</b>.<br><br>
+       
+                           Tudo isso foi possível graças à parceria firmada com a Zoop e com a utilização da nossa plataforma White Label,<br class="d-sm-none d-none"> 
+                           que permite que empresas de qualquer segmento criem soluções financeiras que levam as suas próprias marcas.<br><br>
+       
+                           Além do considerável aumento de receita, o iFood também conseguiu com a Zoop:
+                       </p>
+                </div><!--container-->
+            </div>
+            <img class="image" src="assets/images/sectiom03-img.png" alt="Quando zoop e ifood se encontraram">
+            <div class="div02">
+                <div class="container">
+                    <div class="row01">
+                        <div class="item">
+                            <img src="assets/images/section03-icon1.svg" alt="icone de custo">
+                            <p>Reduzir os custos relativos ao processo de desenvolvimento</p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/section03-icon2.svg" alt="icone de Conciliação">
+                            <p>Não precisar lidar com questões regulatórias características do setor</p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/section03-icon3.svg" alt="icone de Configuração">
+                            <p>Reduzir o tempo total para entrega das soluções</p>
+                        </div>
+                    </div>
+                    <div class="row02">
+                        <div class="item">
+                            <img src="assets/images/section03-icon4.svg" alt="icone de API">
+                            <p>Não precisar dispor de uma<br> equipe exclusiva para a criação e desenvolvimento dos novos produtos</p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/section03-icon5.svg" alt="icone de Cash  Management Billing">
+                            <p>Não desviar do seu core business em nenhum momento</p>
+                        </div>
+                    </div>
+                </div><!--container-->
+            </div>
+            
+        </section><!--section03-->
+
+        <section id="section04">
+            <div class="container">
+                <h2>O crescimento do mercado</h2>
+                <div class="clearfix"></div>
+                <div class="div01">
+                    <div class="row01">
+                        <div class="item">
+                            <h3>78%</h3>
+                            <p>Faturamento total do <br> 
+                            mercado de vendas online <br>
+                            que os Marketplaces detêm</p>
+                        </div>
+                        <div class="item">
+                            <h3>R$30bi</h3>
+                            <p>Crescimento do setor <br>
+                            em faturamento na <br>
+                            pandemia em 2020</p>
+                        </div>
+                    </div>
+                    <div class="row02">
+                        <div class="item">
+                            <h3>7mi</h3>
+                            <p>Usuários que fizeram <br>
+                            sua primeira compra <br>
+                            em e-commerce</p>
+                        </div>
+                        <div class="item">
+                            <h3>73,88%</h3>
+                            <p>Crescimento no <br>
+                            e-commerce</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="info">Dados do índice MCC-ENET e Ebit | Nielsen, referentes a 2020.</p>
+            </div><!--container-->
+        </section><!--section04-->
+
+        <section id="section05">
+            <div class="container">
+                <div class="clearfix"></div>
+                <div class="div01">
+                    <h2>
+                        Experiência de pagamentos<br class="d-sm-none"> com fluidez
+                    </h2>
+                    <p>
+                        Usando o Zoop Payments, você oferece um checkout simples, <br class="d-sm-none d-none">
+                        aumentando a taxa de conversão, com flexibilidade, velocidade<br class="d-sm-none d-none">
+                        e confiabilidade para acelerar o crescimento do seu <br class="d-sm-none d-none">
+                        e-commerce ou marketplace. <br><br>
+
+                        <b>No diagnóstico Zoop, você vai entender, com detalhes, como<br class="d-sm-none d-none">
+                        está a fluidez de seus serviços de pagamentos.</b>
+                    </p>
+                    <a class="btn-border-white" href="#form">Quero entender mais</a>
+                </div><!--div01-->
+                <div class="div02">
+                    <img class="playvideo" src="assets/images/play.png" width="auto" height="auto" poster="assets/images/play.png">
+                </div><!--div02-->
+                <div class="clearfix"></div>
+            </div><!--container-->
+        </section><!--section05-->
+
+        <section id="section06">
+            <div class="container">
+                <div class="div01">
+                    <h2>Mergulhe nas vantagens<br> 
+                        de Zoop payments
+                    </h2>
+                    <p>Saiba, na prática, como todas essas vantagens impactam diretamente o <br class="d-none">
+                    crescimento do seu e-commerce ou marketplace. Faça um diagnóstico Zoop!
+                    </p>
+                    <div class="div02">
+                        <div class="col01">
+                            <div class="item">
+                                <img src="assets/images/section06-icon1.svg" alt="">
+                                <h3>Split de pagamento</h3>
+                                <p>Divisão automática de valores entre <br> 
+                                diferentes participantes de uma venda, <br class="d-none">
+                                evitando bitributação e facilitando a <br class="d-none">
+                                conciliação financeira.
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/section06-icon2.svg" alt="">
+                                <h3>100% White Label</h3>
+                                <p>Nós garantimos a tecnologia de<br>
+                                pagamentos, você se preocupa com a <br class="d-none">
+                                experiência do cliente. A sua marca <br class="d-none">
+                                em destaque, sempre, do seu jeito.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col02">
+                            <div class="item">
+                                <img src="assets/images/section06-icon3.svg" alt="">
+                                <h3>Captura Omnichannel</h3>
+                                <p>Pagamentos presenciais, digitais e<br class="d-none">
+                                recorrentes: todo o fluxo financeiro<br class="d-none">  
+                                em uma única plataforma. Ideal para <br class="d-none">
+                                negócios com lojas físicas e virtuais.
+                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="assets/images/section06-icon4.svg" alt="">
+                                <h3>Alta Taxa de Conversão<br> e Antifraude</h3>
+                                <p>Robustez para grandes volumes de <br class="d-none">
+                                transações com alta taxa de <br class="d-none">
+                                conversão e sistema antifraude.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-border-black" href="#form">Fazer diagnóstico</a>
+                </div>
+            </div><!--container-->
+        </section><!--section06-->
+
+        <section id="section07">
+            <div class="container">
+                <h2>
+                    Para e-commerces e marketplaces
+                </h2>
+
+                <div class="div02 d-md-block">
+                    <div class="item">
+                        <img src="assets/images/section08-icon4.svg" alt="">
+                        <span>
+                            <h3>Ferramentas de gestão integrada:</h3>
+                            <p>Você e o seu cliente transacionando imediatamente.</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/section08-icon5.svg" alt="">
+                        <span>
+                            <h3>Speed to market:</h3>
+                            <p>Diminua tempo e custos com desenvolvimento.</p>
+                        </span>
+                    </div>
+                </div><!--mobile-->
+
+                <div class="div01">
+                    <div class="item">
+                        <img src="assets/images/section08-icon1.svg" alt="">
+                        <span>
+                            <h3>Split de pagamentos:</h3>
+                            <p>Evite a bitributação e facilite a sua conciliação financeira.</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/section08-icon2.svg" alt="">
+                        <span>
+                            <h3>Plataforma customizável:</h3>
+                            <p>Use somente o que é necessário para o seu negócio.</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/section08-icon3.svg" alt="">
+                        <span>
+                            <h3>Aceite as principais bandeiras de cartão:</h3>
+                            <p>Mais opções e melhor experiência para seus clientes.</p>
+                        </span>
+                    </div>
+                    <a class="btn-border-white" href="#form">Quero conversar</a>
+                </div>
+
+                <div class="div02 d-sm-none d-none">
+                    <div class="item">
+                        <img src="assets/images/section08-icon4.svg" alt="">
+                        <span>
+                            <h3>Ferramentas de gestão integrada:</h3>
+                            <p>Você e o seu cliente transacionando imediatamente.</p>
+                        </span>
+                    </div>
+                    <div class="item">
+                        <img src="assets/images/section08-icon5.svg" alt="">
+                        <span>
+                            <h3>Speed to market:</h3>
+                            <p>Diminua tempo e custos com desenvolvimento.</p>
+                        </span>
+                    </div>
+                    <a class="btn-border-white d-md-block" href="#form">Quero conversar</a>
+                </div>
+                
+    
+                <div class="clearfix"></div>
+
+            </div><!--container-->
+        </section><!--section07-->
+
+        <section id="section08">
+            <div class="container">
+                <div class="clearfix"></div>
+                <div class="div01">
+                    <h2>
+                        Vamos bater um papo?
+                    </h2>
+                    <p>
+                        A Karina Valente, Business Developer da Zoop, junto <br class="d-none d-sm-none">
+                        de seu time especializado, está pronta para entender <br class="d-none d-sm-none">
+                        tudo sobre o seu e-commerce ou marketplace, e<br class="d-none d-sm-none"> 
+                        entregar um diagnóstico 100% personalizado.<br><br>
+                        Clique abaixo para agendar um papo e começar a<br class="d-none d-sm-none">
+                        oferecer uma experiência de pagamento<br class="d-none d-sm-none"> 
+                        descomplicada de verdade.
+                    </p>
+                    <a class="btn-border-black" href="#form">Agendar</a>
+                </div><!--div01-->
+                <div class="div02">
+                </div><!--div02-->
+
+                <div class="clearfix"></div>
+            </div><!--container-->
+        </section><!--section08-->
+
+        <section id="section09">
+            <div class="container">
+                <div class="div01">
+                    <img src="assets/images/logo-rodape.svg">
+                </div><!--col01-->
+                <div class="div02">
+                    <p>© Zoop - Todos os direitos reservados</p>
+                </div><!--col02-->
+            </div><!--container-->
+        </section><!--section09-->
+
+        <div class="botaofixo">
+            <a id="abrir-form">Fale com um especialista</a>
+            <style>
+                .botaofixo a{
+                    width: 100%;
+                    height: 50px;
+                    border: none;
+                    background-color: #FF7300;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    font-style: italic;
+                    line-height: 2.5;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #fff;
+                    font-family: PraktikaRounded-ExtraItalic-Bold;
+                    display: none;
+                    position: fixed;
+                    bottom: 0;
+                }
+                #close-form {
+                    background: transparent;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 999;
+                    padding: 10px;
+                    display: none;
+                }
+                @media screen and (max-width:767px){
+                    .botaofixo a{
+                        display: block;
+                    }
+                    #close-form {
+                        display: block;
+                    }
+                    #section01 .form{
+                        position: fixed;
+                        top: 0;
+                        margin: 0;
+                        left: 0;
+                        width: 90%!important;
+                        height: 100%!important;
+                        display: none;
+                        overflow-y: auto;
+                        z-index: 999999999;
+                    }
+                    form button {
+                        margin-bottom: 40px;
+                    }
+                }
+            </style>
+            <script>
+                $(document).ready(function() {
+
+                    var tela = $(window).width();
+
+                    $('#abrir-form').click(function() {
+
+                        $('html, body').animate({
+                            scrollTop: $('body').offset().top
+                        }, 500);
+
+                        $('.form').show();
+                        $('html').css('overflow-y','hidden');
+
+                        return false;
+
+                    });
+
+                    $('#close-form').click(function() {
+
+                        $('.form').hide();
+                        $('html').css('overflow-y','auto');
+
+                        return false;
+
+                    });
+
+                });
+            </script>
+        </div><!--botãofixo-->
+
+        <footer>
+            <script src="assets/js/scripts.js"></script>
+        </footer>
+        <!-- inicio cokies -->
+        <script>
+            function aceitarCookies() {
+                document.cookie="aceitouAvisoCookie=true";
+                $('#banner-cookies-privacidade').css('display','none');
+            }
+        </script>
+
+        <style>
+            .col-sm-3 {
+                width: 25%;
+            }
+            .col-sm-6 {
+                width: 65%;
+            }
+            .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+                float: left;
+            }
+            .banner-cookies {
+                width: 100%;
+                background-color: #000000;
+                bottom: 0;
+                position: fixed;
+                z-index: 99999999;
+                font-family: 'Roboto',sans-serif;
+                padding: 20px 0px;
+            }
+
+            .banner-cookies-tit {
+                font-size: 25px;
+                color: #FFF;
+            }
+
+            .banner-cookies-txt {
+                font-size: 13px;
+                color: #FFF;
+                padding: 8px 10px;
+            }
+
+            .banner-cookies-txt a {
+                color: #FF7300;
+                text-decoration: underline;
+            }
+
+            .banner-cookies-txt a:hover {
+                color: #FF7300;
+                text-decoration: underline;
+            }
+
+            .banner-cookies-botao {
+                text-align: right;
+            }
+
+            button.btn-aceitar {
+                text-decoration: none;
+                border: none;
+                color: #FFF;
+                font-size: 15px;
+                background-color: #FF7300;
+                height: 35px;
+                font-family: 'Roboto',sans-serif;
+                line-height: 18px;
+                letter-spacing: .2px;
+                text-align: center;
+                padding: 9px;
+                z-index: 9999999999!important;
+            }
+
+            button.btn-aceitar :active :focus :hover :visited{
+                border-radius: 20px;
+                text-decoration: none;
+                border: none;
+                color: #FFF;
+                font-size: 15px;
+                background-color: #FF7300;
+                width: 100%;
+                height: 35px;
+                font-family: 'Roboto',sans-serif;
+                line-height: 18px;
+                letter-spacing: .2px;
+                text-align: center;
+                padding: 9px;
+                z-index: 9999999999!important;
+            }
+            .container-cookies{
+                width:95%;
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width:766px){
+                /* .btn-pink,.btn-border,.btn-border-small,.btn-border-white,.btn-border-black,.btn-border-orange{
+                    display:none!important;
+                } */
+                .swal2-container {
+                    z-index: 9999999999;
+                }
+                .banner-cookies {
+                    bottom: 50px;
+                }
+                #banner-cookies-privacidade .col-sm-1,#banner-cookies-privacidade .col-sm-2,#banner-cookies-privacidade .col-sm-3,#banner-cookies-privacidade .col-sm-4,#banner-cookies-privacidade .col-sm-5,#banner-cookies-privacidade .col-sm-6,#banner-cookies-privacidade .col-sm-7,#banner-cookies-privacidade .col-sm-8,#banner-cookies-privacidade .col-sm-9,#banner-cookies-privacidade .col-sm-10,#banner-cookies-privacidade .col-sm-11,#banner-cookies-privacidade .col-sm-12 {
+                    float: left;
+                    width: 90%;
+                    text-align: left;
+                }
+                .banner-cookies-txt {
+                    font-size: 11px;
+                }
+                .banner-cookies-botao {
+                    padding-left: 10px;
+                    text-align: left;
+                }
+                button.btn-aceitar {
+                    font-size: 9px;
+                    height: auto;
+                    line-height: 5px;
+                    text-align: center;
+                    padding: 9px;
+                }
+            }
+        </style>
+
+        <section id="banner-cookies-privacidade">
+            <div class="banner-cookies">
+                <div class="container-cookies">
+                    <div class="col-sm-6 col-xs-12 banner-cookies-txt">
+                        Usamos cookies em nosso site para fornecer uma experiência mais relevante, lembrando suas preferências e visitas. Ao clicar em “Aceitar”, concorda com a utilização de TODOS os cookies.
+                    </div>
+                    <div class="col-sm-3 col-xs-12 banner-cookies-botao">
+                        <button onclick="aceitarCookies()" class="btn-aceitar">
+                            Aceitar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fim cokies -->
+    </body>
+</html>
